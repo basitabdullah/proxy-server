@@ -12,7 +12,7 @@ const response = await fetch(
   "https://inrdeals.com/fetch/stores?token=2c3f5a1662f83d1db90c9441012d4b3ffc21bbfb&id=maa443089855"
 );
 const data = await response.json()
-res.json(await data)
+res.json(data)
 }) 
 
 
@@ -21,7 +21,7 @@ app.get("/offers", async (req, res) => {
     "https://inrdeals.com/api/v1/coupon-feed?token=7d93f1be383789a926af8abea04225ad421ece1c&id=maa443089855"
   );
   const data = await response.json();
-  res.json(await data);
+  res.json(data);
 }); 
 
 
